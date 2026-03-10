@@ -365,10 +365,7 @@ def get_parameter_values():
         "Negative electrode lithiation OCP [V]": graphite_ocp_lithiation,
         "Negative electrode delithiation OCP [V]": graphite_ocp_delithiation,
 
-        # Parameter fürs Axen/One State Hysteresis Modell 
-        "Secondary: Negative particle lithiation hysteresis decay rate": 100,
-        "Secondary: Negative particle delithiation hysteresis decay rate": 100,
-        "Secondary: Initial hysteresis state in negative electrode": 1,
+     
         #___________________________________________________________________________________________
         "Negative electrode porosity": 0.37,
         "Negative electrode active material volume fraction": 0.545, # Old initial Value: 0.52
@@ -382,8 +379,8 @@ def get_parameter_values():
         #"Negative electrode specific heat capacity [J.kg-1.K-1]": 700.0,
         #"Negative electrode thermal conductivity [W.m-1.K-1]": 1.7,
         #"Negative electrode double-layer capacity [F.m-2]": 0.2,
-
-
+        "Negative electrode particle hysteresis decay rate": 1,
+        "Negative electrode particle hysteresis switching factor": 1000,
 
 
         # Positive Electrode
