@@ -379,9 +379,18 @@ def get_parameter_values():
         #"Negative electrode specific heat capacity [J.kg-1.K-1]": 700.0,
         #"Negative electrode thermal conductivity [W.m-1.K-1]": 1.7,
         #"Negative electrode double-layer capacity [F.m-2]": 0.2,
-        "Negative electrode particle hysteresis decay rate": 1,
-        "Negative electrode particle hysteresis switching factor": 1000,
-
+        
+        # Hysteresis parameters
+        # Negative electrode (graphite)
+        "Negative particle lithiation hysteresis decay rate": 100,
+        "Negative particle delithiation hysteresis decay rate": 100,
+        # starting from SOC=1: graphite was lithiating → h = -1 (lithiation branch)
+        # "Initial hysteresis state in negative electrode": -1,
+        # Positive electrode (LFP)
+        "Positive particle lithiation hysteresis decay rate": 100,
+        "Positive particle delithiation hysteresis decay rate": 100,
+        # starting from SOC=1: LFP was delithiating → h = +1 (delithiation branch)
+        # "Initial hysteresis state in positive electrode": 1,
 
         # Positive Electrode
         "Positive electrode conductivity [S.m-1]": 10,
@@ -396,8 +405,8 @@ def get_parameter_values():
         "Positive electrode Bruggeman coefficient (electrode)": 1.5,
         "Positive electrode Bruggeman coefficient (electrolyte)": 2,
         "Positive electrode charge transfer coefficient": 0.5,
-        "Positive electrode particle hysteresis decay rate": 1,
-        "Positive electrode particle hysteresis switching factor": 1000,
+        # "Positive electrode particle hysteresis decay rate": 1,
+        # "Positive electrode particle hysteresis switching factor": 1000,
         "Positive electrode OCP entropic change [V.K-1]": LFP_entropic_change,
         "Positive electrode exchange-current density [A.m-2]":0.033887*0.25,
         #"Positive electrode density [kg.m-3]": 2341.17,
