@@ -385,12 +385,12 @@ def get_parameter_values():
         "Negative particle lithiation hysteresis decay rate": 100,
         "Negative particle delithiation hysteresis decay rate": 100,
         # starting from SOC=1: graphite was lithiating → h = -1 (lithiation branch)
-        # "Initial hysteresis state in negative electrode": -1,
+        "Initial hysteresis state in negative electrode": -1,
         # Positive electrode (LFP)
         "Positive particle lithiation hysteresis decay rate": 100,
         "Positive particle delithiation hysteresis decay rate": 100,
         # starting from SOC=1: LFP was delithiating → h = +1 (delithiation branch)
-        # "Initial hysteresis state in positive electrode": 1,
+        "Initial hysteresis state in positive electrode": 1,
 
         # Positive Electrode
         "Positive electrode conductivity [S.m-1]": 10,
